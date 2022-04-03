@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /* border: 1px solid red; */
+  height: 120px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  padding: 8px 33px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.24); 
+}
+
+nav {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-basis: 70%;
+}
+
+ul.header {
+  /* border: 1px solid red; */
+  list-style-type: none;
+  display: flex;
+  flex-basis: 100%;
+  height: 100%;
+  align-content: space-around;
+  justify-content: right;
+  align-items: center;
+}
+
+ul.header li {
+  /* border: 1px solid red; */
+  padding-left: 10%;
+}
+
+ul.header li a {
+  text-decoration: none;
+  font-family: Merriweather;
+  font-weight: 700;
+  color: #207D46;
+  font-size: 18px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 250ms ease-in-out;
+}
+
+ul.header li a:hover {
+  border: 2px solid #207D46;
+}
+
+.logo-container {
+  flex-basis: auto;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+.text-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-basis: 15%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h3.serif {
+  font-size: 24px;
+  font-family: "Merriweather";
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+h3.sans-serif {
+  /* border: 1px solid red; */
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  margin-left: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.43em;
+}
+
+.body-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 100%;
+  background-image: url("../assets/desktop-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.about.body-container p {
+  /* border: 1px solid red; */
+  padding: 2% 4.5%;
+  background-color: #207D46;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Merriweather";
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  width: 85%;
+  
+}
+
+.about.body-container a {
+  /* border: 1px solid red; */
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+
+.about.body-container a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+h1.sans-serif {
+  /* border: 1px solid red; */
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background-color: #207D46;
+  padding: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+h2.serif {
+  /* border: 1px solid red; */
+  font-size: 48px;
+  font-family: "Merriweather";
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.24);
+
+}
+
+footer {
+  background-color: #207D46;
+  /* border: 1px solid red; */
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.footer {
+  /* border: 1px solid red; */
+  list-style-type: none;
+  display: flex;
+  flex-basis: 65%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+ul.footer li {
+  /* border: 1px solid red; */
+  padding: 5%;
+}
+
+ul.footer li a {
+  text-decoration: none;
+  font-family: Merriweather;
+  color: #fff;
+  font-size: 14px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 250ms ease-in-out;
+}
+
+ul.footer li a:hover {
+  border: 2px solid #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  h1.sans-serif {
+      /* border: 1px solid red; */
+      font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+      /* border: 1px solid red; */
+      padding: 8px 56px;
+  }
+
+  h1.sans-serif {
+      /* border: 1px solid red; */
+      font-size: 24px;
+  }
+
+  h2.serif {
+      /* border: 1px solid red; */
+      font-size: 80px;
+  }
+} 
