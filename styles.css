@@ -14,10 +14,11 @@ header {
     flex-direction: row;
     flex-basis: 100%;
     padding: 8px 33px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.24); 
 }
 
 nav {
+    /* border: 1px solid black; */
     display: flex;
     flex-basis: 70%;
 }
@@ -41,6 +42,7 @@ ul.header li {
 ul.header li a {
     text-decoration: none;
     font-family: Merriweather;
+    font-weight: 700;
     color: #207D46;
     font-size: 18px;
     border: 2px solid transparent;
@@ -55,6 +57,8 @@ ul.header li a:hover {
 
 .logo-container {
     flex-basis: auto;
+    padding: 0;
+    margin: 0;
     /* border: 1px solid red; */
 }
 
@@ -89,14 +93,39 @@ h3.sans-serif {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center;  */
+    justify-content: center; 
     height: 100%;
-    padding-top: 200px;
     background-image: url("images/desktop-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.about.body-container p {
+    /* border: 1px solid red; */
+    padding: 2% 4.5%;
+    background-color: #207D46;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Merriweather";
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    width: 85%;
+    
+}
+
+.about.body-container a {
+    /* border: 1px solid red; */
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.15s ease-in-out;
+}
+
+.about.body-container a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 
 h1.sans-serif {
