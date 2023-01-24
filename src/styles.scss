@@ -1,1 +1,12 @@
+// SETTINGS
+// TOOLS
+// GENERIC
+// ELEMENTS
+// OBJECTS/LAYOUT
+
+// COMPONENTS
 @use "./app/app.component.scss";
+@use "./app/header/header.component.scss";
+
+// UTILITIES
+@use "./scss/utilities/textTreatments";

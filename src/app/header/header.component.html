@@ -1,0 +1,38 @@
+<header>
+  <nav class="nav">
+    <ul class="nav__header">
+      <li class="nav__header-item--logo">
+        <section class="header-item__logo">
+          <div class="logo-container">
+            <a class="logo-container__home-link" href="../app.component.html">
+                <img src="../../assets/logo.svg" alt="bunny & bee illustrations for Angel Bunny Apiary logo">
+            </a>
+          </div>
+          <div class="logo-text">
+            <h3 class="serif">Angel Bunny</h3>
+            <h3 class="sans-serif">Apiary</h3>
+          </div>
+        </section>
+      </li>
+
+      <li class="nav__header-item--burger" (click)="toggleMobileMenu()">
+        
+        <svg class="burger" *ngIf="!isMenuOpen"width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.96948 9.37686C4.96948 8.82458 5.4172 8.37686 5.96948 8.37686H34.0305C34.5828 8.37686 35.0305 8.82458 35.0305 9.37686C35.0305 9.92915 34.5828 10.3769 34.0305 10.3769H5.96948C5.4172 10.3769 4.96948 9.92915 4.96948 9.37686ZM4.96948 20C4.96948 19.4477 5.4172 19 5.96948 19H34.0305C34.5828 19 35.0305 19.4477 35.0305 20C35.0305 20.5523 34.5828 21 34.0305 21H5.96948C5.4172 21 4.96948 20.5523 4.96948 20ZM5.96948 29.6231C5.4172 29.6231 4.96948 30.0708 4.96948 30.6231C4.96948 31.1754 5.4172 31.6231 5.96948 31.6231H34.0305C34.5828 31.6231 35.0305 31.1754 35.0305 30.6231C35.0305 30.0708 34.5828 29.6231 34.0305 29.6231H5.96948Z" fill="#207D46"/>
+        </svg>
+        <svg class="close" *ngIf="isMenuOpen" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.524 5.01572C34.9235 5.39708 34.9345 6.0265 34.5485 6.42157L21.43 19.8509L21.4308 19.8516L21.2965 19.9887L21.4138 20.1007L21.4127 20.1019L34.9964 33.1055C35.3954 33.4874 35.4055 34.1169 35.019 34.5114C34.6326 34.9059 33.9958 34.9162 33.5969 34.5342L20.0152 21.5325L6.89884 34.9595C6.51292 35.3546 5.87622 35.3657 5.47674 34.9843C5.07727 34.603 5.06629 33.9735 5.45221 33.5785L18.5704 20.1495L18.5693 20.1484L18.7038 20.011L18.5869 19.8993L18.5877 19.8985L5.00357 6.89449C4.60462 6.51258 4.5945 5.88314 4.98098 5.48861C5.36745 5.09407 6.00416 5.08384 6.40311 5.46575L19.9853 18.4679L33.1019 5.04053C33.4878 4.64546 34.1245 4.63435 34.524 5.01572Z" fill="#207D46"/>
+        </svg>
+      </li>
+
+      <li class="nav__header-item--links" [class.is-open]="isMenuOpen">
+        <a class="sans-serif header-item__link" href="#">About</a>
+        <a class="sans-serif header-item__link" href="#">Contact</a>
+        <a class="sans-serif header-item__link" href="#">Shop</a>
+        <a class="sans-serif header-item__link" href="#">Bees</a>
+      </li>
+    </ul>
+  </nav>
+</header>
