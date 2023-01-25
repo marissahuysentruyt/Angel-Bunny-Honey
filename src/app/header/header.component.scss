@@ -7,8 +7,11 @@
   padding: 1.25rem; // 20px/16
   max-height: 5rem; // 80px/16
 
-  // 800px/16
   @media (min-width: 50rem) {
+    margin: 0.625rem 0.625rem 0; // top&left&right: 10px/16; bottom: 0
+  }
+
+  @media (min-width: 69rem) {
     margin: 0.625rem auto 0; // top: 10px/16; bottom: 0
   }
 
@@ -28,6 +31,7 @@
         img {
           display: none;
           max-height: 3rem;
+          margin-right: 0.5rem;
 
           @media (min-width: 50rem) {
             display: inline;
