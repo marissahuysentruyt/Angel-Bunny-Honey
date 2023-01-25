@@ -1,0 +1,73 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 90%), 
+    url('../../assets/background-image_desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .cta {
+    // border: 1px solid blue;
+    padding: 1.25rem; // 20px/16
+    margin: 3rem 0; // top&bottom: 48px/16
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; // 10px/16
+
+    @media (min-width: 74rem) {
+      margin: 10rem auto;
+      max-width: calc(68rem + 2.5rem); 
+    }
+
+    &__heading {
+      color: #fff;
+      font-size: 0.875rem; // 14px/16
+      text-transform: uppercase;
+
+      @media (min-width: 50rem) {
+        font-size: 1rem;
+      }
+    }
+
+    &__subheading {
+      color: #fff;
+      font-size: 2.5rem; // 40px/16
+      text-transform: uppercase;
+
+      @media (min-width: 50rem) {
+        font-size: 4rem; // 64px/16
+        max-width: 55%;
+      }
+
+      @media (min-width: 74rem) {
+        font-size: 6.5rem; // 104px/16
+        max-width: 60%;
+      }
+    }
+
+    &__link {
+      background-color: #E5CA6B;
+      transition: all 150ms ease-in-out;
+      padding: 0.625rem 1.25rem; // top&bottom: 10px/16; left&right: 20px/16
+      text-align: center;
+      text-decoration: none;
+      color: #32271C;
+      
+      &:hover,
+      &:focus {
+        scale: 104%; 
+      }
+      
+      @media (min-width: 37.5rem) {
+        margin-top: calc(3rem - 10px); // 48px/16
+        // this width property keeps the "i want honey" button from extending full-screen
+        // even though it's a flex item of .cta
+        width: clamp(8rem, 9rem, 35%); // 128px is min, 144px is "ideal", 35% is max
+
+      }
+    }
+  }
+}

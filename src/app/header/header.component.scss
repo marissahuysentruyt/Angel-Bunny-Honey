@@ -9,7 +9,7 @@ header {
 
   // 800px/16
   @media (min-width: 50rem) {
-    padding: 0.625rem 1.25rem; // top&bottom: 10px/16; left&right: 20px/16
+    margin: 0.625rem auto 0; // top: 10px/16; bottom: 0
   }
 
   .nav {
