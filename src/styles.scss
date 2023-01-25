@@ -1,6 +1,8 @@
 // SETTINGS
 // TOOLS
 // GENERIC
+@use "./scss/generic/fonts";
+
 // ELEMENTS
 // OBJECTS/LAYOUT
 
@@ -10,4 +12,3 @@
 @use "./app/footer/footer.component.scss";
 
 // UTILITIES
-@use "./scss/utilities/textTreatments";
