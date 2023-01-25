@@ -1,0 +1,84 @@
+.our-story {
+  background-color: #e5e5e5;
+  position: relative;
+  z-index: 2;
+  padding: 1.25rem; // 20px/16
+  text-align: center;
+  margin: auto;
+
+  @media (min-width: 74rem) {
+    padding: 7rem 0 26.5625rem; // top: 112px/16; left&right: 0; bottom: 425px/16
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -134px;
+      left: -6rem;
+      // border: 1px solid red;
+      background-image: url("../../assets/hexagon-graphic.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      max-width: 275px;
+      height: 322px;
+      z-index: -1;
+    }
+  }
+
+  .heading__title {
+    color: #904216;
+    font-size: 2rem;
+    line-height: 1.4; // 46px/16
+
+    @media (min-width: 50rem) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__p1,
+  &__p2 {
+    display: block;
+    margin: 1.625rem 0; // top&bottom: 26px/16
+    max-width: 70ch;
+    line-height: 1.4;
+    
+    @media (min-width: 40rem) {
+      margin: 1.625rem auto;
+    }
+  }
+
+  @media (min-width: 74rem) {
+    &__p2:before {
+      content: "";
+      position: absolute;
+      bottom: 45%;
+      left: 27%;
+      // border: 1px solid red;
+      background-image: url("../../assets/hexagon-graphic.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      max-width: 135px;
+      height: 159px;
+      z-index: -1;
+    }
+
+    &__p1:after {
+      content: "";
+      position: absolute;
+      top: 1.5rem;
+      right: 10rem;
+      // border: 1px solid red;
+      background-image: url("../../assets/hexagon-graphic.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      max-width: 175px;
+      height: 198px;
+      z-index: -1;
+    }
+  }
+}
