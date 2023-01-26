@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
 import { AboutComponent } from './about/about.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
     HeaderComponent,
     FooterComponent,
     HeroBannerComponent,
-    AboutComponent
+    AboutComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
