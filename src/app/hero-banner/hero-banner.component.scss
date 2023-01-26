@@ -48,27 +48,8 @@
       }
     }
 
-    &__link {
-      background-color: #E5CA6B;
-      transition: all 150ms ease-in-out;
-      padding: 0.625rem 1.25rem; // top&bottom: 10px/16; left&right: 20px/16
-      text-align: center;
+    &__button {
       text-decoration: none;
-      color: #32271C;
-      text-transform: uppercase;
-      
-      &:hover,
-      &:focus {
-        scale: 104%; 
-      }
-      
-      @media (min-width: 37.5rem) {
-        margin-top: calc(3rem - 10px); // 48px/16
-        // this width property keeps the "i want honey" button from extending full-screen
-        // even though it's a flex item of .cta
-        width: clamp(8.5rem, 10rem, 35%); // 136px is min, 160px is "ideal", 35% is max
-
-      }
     }
   }
 }

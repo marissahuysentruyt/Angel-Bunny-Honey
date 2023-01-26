@@ -4,10 +4,12 @@
 @use "./scss/generic/fonts";
 
 // ELEMENTS
+
 // OBJECTS/LAYOUT
 
 // COMPONENTS
 @use "./app/app.component.scss";
+@use "./app/button-yellow/button.component.scss";
 @use "./app/header/header.component.scss";
 @use "./app/hero-banner/hero-banner.component.scss";
 @use "./app/footer/footer.component.scss";

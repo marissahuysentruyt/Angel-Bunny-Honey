@@ -52,31 +52,16 @@
     &-text {
       text-align: center;
 
-      // 37.5rem is an acceptable resolution to NOT have full-width button
-      // or center aligned text
+      // 37.5rem is an acceptable resolution to NOT have 
+      // center aligned text
       @media (min-width: 37.5rem) {
         text-align: left;
       }
 
     }
-
+    
     &-link {
-      background-color: #E5CA6B;
-      transition: all 150ms ease-in-out;
-      padding: 0.625rem 1.25rem; // top&bottom: 10px/16; left&right: 20px/16
-      text-align: center;
       text-decoration: none;
-      color: #32271C;
-      text-transform: uppercase;
-      
-      &:hover,
-      &:focus {
-        scale: 104%; 
-      }
-
-      @media (min-width: 37.5rem) {
-        width: fit-content;
-      }
     }
   }
 }
