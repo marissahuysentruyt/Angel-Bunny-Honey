@@ -13,7 +13,6 @@ export class ButtonComponent implements OnInit {
   // @HostBinding('youtube-href') youTube: string = "https://www.youtube.com/@angelbunnyapiary1790";
 
   ngOnInit() {
-    console.log(this.name);
     this.heroButton = true;
     // this.menuButton = true;
     // this.youTube = true;

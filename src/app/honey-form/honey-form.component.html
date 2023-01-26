@@ -1,0 +1,76 @@
+<section class="get-honey" id="honey-form">
+  <div>
+    <h2 class="get-honey__heading heading-text">
+      Want some <span>honey?</span> 
+    </h2>
+  </div>
+  <form
+    (ngSubmit)="onSubmit(honeyForm.value)"
+    class="get-honey__form content-text"
+    [formGroup]="honeyForm"
+  >
+    <label for="firstName" name="firstName" aria-hidden="false">
+      First Name
+    </label>
+    <input required id="firstName" name="firstName" class="content-text" type="text" placeholder="First Name" formControlName="firstName" [ngClass]="{'form-submitted': formSubmitted}">
+    <div class="error content-text"
+      *ngIf="honeyForm.get('firstName')!.hasError('pattern') && 
+      (honeyForm.get('firstName')!.dirty || honeyForm.get('firstName')!.touched)"
+      >
+      This name has one or more invalid characters.
+    </div>
+
+    <label for="lastName" name="lastName" aria-hidden="false">
+      Last Name
+    </label>
+    <input required id="lastName" name="lastName"class="content-text" type="text" placeholder="Last Name" formControlName="lastName" [ngClass]="{'form-submitted': formSubmitted}">
+    <div class="error"
+      *ngIf="honeyForm.get('lastName')!.hasError('pattern') && 
+      (honeyForm.get('lastName')!.dirty || honeyForm.get('lastName')!.touched)"
+    >
+      This name has one or more invalid characters.
+    </div>
+
+    <label for="email" name="email" aria-hidden="false">
+      Email
+    </label>
+    <input id="email" name="email" class="content-text" type="email" placeholder="Email" formControlName="email" [ngClass]="{'form-submitted': formSubmitted}">
+    <div class="error" *ngIf="honeyForm.get('email')!.errors">
+      Please enter a valid email.
+    </div>
+
+    <label for="phoneNumber" name="phoneNumber" aria-hidden="false">
+      Phone Number
+    </label>
+    <input id="phoneNumber" name="phoneNumber" type="text" placeholder="Phone Number" formControlName="phoneNumber" [ngClass]="{'form-submitted': formSubmitted}">
+    <div class="error"
+      *ngIf="(honeyForm.get('phoneNumber')!.hasError('pattern') ||
+      honeyForm.get('phoneNumber')!.hasError('maxlength') ||
+      honeyForm.get('phoneNumber')!.hasError('minlength')) &&
+      (honeyForm.get('phoneNumber')!.dirty || honeyForm.get('phoneNumber')!.touched)">
+      Please enter a valid 10-digit phone number.
+    </div>
+
+    <label for="contactReason" name="contactReason" aria-hidden="false">
+      Contact Reason
+    </label>
+    <select id="contactReason" name="contactReason" class="form-control" aria-placeholder="Why would you like to contact us?" formControlName="contactReason" [ngClass]="{'form-submitted': formSubmitted}">
+      <option value="" disabled selected hidden>I want...</option>
+      <option *ngFor="let option of formValues" [value]="option"> 
+        {{ option }}
+      </option>
+    <div class="error" *ngIf="honeyForm.get('contactReason')!.pristine || honeyForm.get('contactReason')!.untouched">
+      Please let us know what your inquiry is about. 
+    </div>
+    </select>
+
+    <button type="submit" class=" form-button" [disabled]="!honeyForm.valid" >
+      Submit!
+    </button>
+    <div
+      *ngIf="formSubmitted"
+    >
+      Thanks for contacting us! 
+    </div>
+  </form>
+</section>
