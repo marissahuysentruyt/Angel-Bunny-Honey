@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angel-bunny-honey:build:production"
+              "buildTarget": "angel-bunny-honey:build:production"
             },
             "development": {
-              "browserTarget": "angel-bunny-honey:build:development"
+              "buildTarget": "angel-bunny-honey:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angel-bunny-honey:build"
+            "buildTarget": "angel-bunny-honey:build"
           }
         },
         "test": {
