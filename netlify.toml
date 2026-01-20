@@ -6,3 +6,6 @@
 [build]
   command = "ng build"
   publish = "dist/angel-bunny-honey"
+
+[build.environment]
+  NODE_VERSION = "22"
