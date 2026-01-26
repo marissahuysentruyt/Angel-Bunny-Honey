@@ -4,14 +4,14 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
       day: "monday"
       time: "09:00"
     open-pull-requests-limit: 10
     reviewers:
-      - "your-github-username"
+      - "marissahuysentruyt"
     assignees:
-      - "your-github-username"
+      - "marissahuysentruyt"
     commit-message:
       prefix: "chore"
       include: "scope"
@@ -31,8 +31,3 @@ updates:
         update-types:
           - "minor"
           - "patch"
-    # Ignore major version updates for stable packages
-    ignore:
-      # Allow manual review for major version updates
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
