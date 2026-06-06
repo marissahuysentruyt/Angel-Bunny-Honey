@@ -5,7 +5,7 @@
 
 [build]
   command = "ng build"
-  publish = "dist/angel-bunny-honey"
+  publish = "dist/angel-bunny-honey/browser"
 
 [build.environment]
   NODE_VERSION = "22"
