@@ -3,9 +3,10 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 import { HoneyFormService } from '../honey-form.service';
 
 @Component({
-  selector: 'app-honey-form',
-  templateUrl: './honey-form.component.html',
-  styleUrls: ['./honey-form.component.scss']
+    selector: 'app-honey-form',
+    templateUrl: './honey-form.component.html',
+    styleUrls: ['./honey-form.component.scss'],
+    standalone: false
 })
 export class HoneyFormComponent implements OnInit {
   honeyForm!: FormGroup;
