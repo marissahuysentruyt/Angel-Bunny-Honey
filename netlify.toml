@@ -3,6 +3,9 @@
   to = "/index.html"
   status = 200
 
-  [build]
-    command = "ng build angel-bunny-honey"
-    publish = "dist/angel-bunny-honey"
+[build]
+  command = "ng build"
+  publish = "dist/angel-bunny-honey/browser"
+
+[build.environment]
+  NODE_VERSION = "22"
