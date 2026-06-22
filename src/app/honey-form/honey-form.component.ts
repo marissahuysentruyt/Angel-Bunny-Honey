@@ -5,8 +5,7 @@ import { HoneyFormService } from '../honey-form.service';
 @Component({
     selector: 'app-honey-form',
     templateUrl: './honey-form.component.html',
-    styleUrls: ['./honey-form.component.scss'],
-    standalone: false
+    styleUrls: ['./honey-form.component.scss']
 })
 export class HoneyFormComponent implements OnInit {
   honeyForm!: FormGroup;
