@@ -1,11 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { HoneyFormService } from '../honey-form.service';
+import { NgClass } from '@angular/common';
 
 @Component({
-  selector: 'app-honey-form',
-  templateUrl: './honey-form.component.html',
-  styleUrls: ['./honey-form.component.scss']
+    selector: 'app-honey-form',
+    templateUrl: './honey-form.component.html',
+    styleUrls: ['./honey-form.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [ReactiveFormsModule, NgClass]
 })
 export class HoneyFormComponent implements OnInit {
   honeyForm!: FormGroup;

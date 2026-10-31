@@ -1,20 +1,11 @@
-import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'app-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss'], 
+    selector: 'app-button',
+    templateUrl: './button.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
+    styleUrls: ['./button.component.scss']
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent {
   @Input() name!: string;
-
-  @HostBinding('cta_link') heroButton: boolean = false;
-  // @HostBinding('header-item__button') menuButton: boolean = false;
-  // @HostBinding('youtube-href') youTube: string = "https://www.youtube.com/@angelbunnyapiary1790";
-
-  ngOnInit() {
-    this.heroButton = true;
-    // this.menuButton = true;
-    // this.youTube = true;
-  }
 }

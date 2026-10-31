@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+
+import { ButtonComponent } from '../button-yellow/button.component';
 
 @Component({
-  selector: 'app-header-nav',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+    selector: 'app-header-nav',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: [ButtonComponent]
 })
 export class HeaderComponent {
   isMenuOpen = false;
