@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ButtonComponent } from '../button-yellow/button.component';
 
@@ -7,6 +7,7 @@ import { ButtonComponent } from '../button-yellow/button.component';
     selector: 'app-hero-banner',
     templateUrl: './hero-banner.component.html',
     styleUrls: ['./hero-banner.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [HeaderComponent, ButtonComponent]
 })
 export class HeroBannerComponent {

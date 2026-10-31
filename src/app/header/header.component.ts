@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { ButtonComponent } from '../button-yellow/button.component';
 
@@ -6,6 +6,7 @@ import { ButtonComponent } from '../button-yellow/button.component';
     selector: 'app-header-nav',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [ButtonComponent]
 })
 export class HeaderComponent {
