@@ -78,12 +78,6 @@
           "options": {
             "buildTarget": "angel-bunny-honey:build"
           }
-        },
-        "test": {
-          "builder": "@angular/build:jest",
-          "options": {
-            "tsConfig": "tsconfig.spec.json"
-          }
         }
       }
     }

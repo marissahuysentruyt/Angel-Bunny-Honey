@@ -9,7 +9,7 @@ describe('HoneyFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HoneyFormComponent ],
+      imports: [HoneyFormComponent],
       providers: [
         provideHttpClient(),
         provideHttpClientTesting()
